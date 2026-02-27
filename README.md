@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+# ⭕ React Tic-Tac-Toe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A classic **Tic-Tac-Toe** game built with **React**. Two players take turns marking spaces on a 3×3 grid — the first to align three marks in a row, column, or diagonal wins.
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white&style=flat-square)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black&style=flat-square)
+![CSS3](https://img.shields.io/badge/CSS3-Styled-1572B6?logo=css3&logoColor=white&style=flat-square)
+![CRA](https://img.shields.io/badge/Create_React_App-Bootstrapped-09D3AC?logo=createreactapp&logoColor=white&style=flat-square)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📋 Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Features](#-features)
+- [Demo](#-demo)
+- [Tech Stack](#-tech-stack)
+- [Getting Started](#-getting-started)
+- [Project Structure](#-project-structure)
+- [Available Scripts](#-available-scripts)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🎮 **Two-player mode** — play locally against a friend
+- 🏆 **Win detection** — automatically detects rows, columns, and diagonal wins
+- 🤝 **Draw detection** — recognizes a tie when the board is full
+- 🔄 **Reset button** — restart the game at any time
+- 💡 **Turn indicator** — clearly displays whose turn it is
+- 📱 **Responsive design** — works on desktop and mobile
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Demo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> Coming soon — feel free to deploy and share your own live link!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠 Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Technology | Role |
+|---|---|
+| **React** | UI library & component architecture |
+| **JavaScript (ES6+)** | Game logic |
+| **CSS3** | Styling & layout |
+| **HTML5** | Markup |
+| **Create React App** | Project scaffolding & build tooling |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🏁 Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
 
-## Learn More
+Make sure you have the following installed:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation
 
-### Code Splitting
+```bash
+# 1. Clone the repository
+git clone https://github.com/yannisduvignau/react-tic-tac-toe.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# 2. Navigate into the project directory
+cd react-tic-tac-toe
 
-### Analyzing the Bundle Size
+# 3. Install dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# 4. Start the development server
+npm start
+```
 
-### Making a Progressive Web App
+The app will open automatically at [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+react-tic-tac-toe/
+├── public/
+│   └── index.html          # HTML entry point
+├── src/
+│   ├── components/         # React components (Board, Square, etc.)
+│   ├── App.js              # Root component
+│   ├── App.css             # Global styles
+│   └── index.js            # React DOM entry point
+├── .gitignore
+├── package.json
+└── README.md
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📜 Available Scripts
 
-### `npm run build` fails to minify
+| Command | Description |
+|---|---|
+| `npm start` | Runs the app in development mode at `localhost:3000` |
+| `npm test` | Launches the test runner in interactive watch mode |
+| `npm run build` | Builds the app for production into the `build/` folder |
+| `npm run eject` | Exposes the CRA configuration (irreversible) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how to get started:
+
+```bash
+# 1. Fork the repository
+# 2. Create a feature branch
+git checkout -b feature/your-feature-name
+
+# 3. Commit your changes
+git commit -m "feat: add your feature"
+
+# 4. Push to your fork
+git push origin feature/your-feature-name
+
+# 5. Open a Pull Request
+```
+
+Please make sure your code is clean and follows the existing style conventions.
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+  Made with ❤️ by <a href="https://github.com/yannisduvignau">yannisduvignau</a>
+</div>
